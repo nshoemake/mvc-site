@@ -1,12 +1,5 @@
 <a name="readme-top"></a>
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -19,23 +12,22 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/nshoemake/mvc-site">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Journal More</h3>
 
   <p align="center">
-    project_description
+    A full-stack web app built with MVC architecture that allows users to create, read, update, delete, and share journal entries (by setting a status of public or private).
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/nshoemake/mvc-site"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="http://journalmore.herokuapp.com/">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/nshoemake/mvc-site/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
 </div>
 
@@ -72,16 +64,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](http://journalmore.herokuapp.com/)
 
-The purpose of this project is to explain and demonstrate the value of the MVC architecture. As one of the more popular design paradigms, it’s important for any budding developer to understand the concept from a macro view. The code in this repo is the accompanying material of the lecture/tutorial I've prepared.
+The purpose of this project is to explain and demonstrate the value of the MVC architecture. As one of the more popular design paradigms, it’s important for any budding developer to understand the concept from a macro view. The code in this repo is the accompanying material of the lecture I've prepared.
 
-If you'd like to follow along and learn about the MVC structure please clone this repo and visit: <a href="https://nshoemake.me/blog/mvc-site">
+If you'd like to learn about the MVC structure please clone this repo and visit: <a href="https://nshoemake.me/blog/mvc-site">
 
 
 <img align="center" src="https://www.ma-no.org/cache/galleries/contents-2002/router-mvc-db.svg.png" alt="diagram of mvc structure">
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +150,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/nshoemake/mvc-site/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,9 +186,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@nshoemake_](https://twitter.com/nshoemake_) - nick@nshoemake.me.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/nshoemake/mvc-site](https://github.com/nshoemake/mvc-site)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,18 +207,18 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/nshoemake/mvc-site.svg?style=for-the-badge
+[contributors-url]: https://github.com/nshoemake/mvc-site/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/nshoemake/mvc-site.svg?style=for-the-badge
+[forks-url]: https://github.com/nshoemake/mvc-site/network/members
+[stars-shield]: https://img.shields.io/github/stars/nshoemake/mvc-site.svg?style=for-the-badge
+[stars-url]: https://github.com/nshoemake/mvc-site/stargazers
+[issues-shield]: https://img.shields.io/github/issues/nshoemake/mvc-site.svg?style=for-the-badge
+[issues-url]: https://github.com/nshoemake/mvc-site/issues
+[license-shield]: https://img.shields.io/github/license/nshoemake/mvc-site.svg?style=for-the-badge
+[license-url]: https://github.com/nshoemake/mvc-site/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/nshoemake
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
