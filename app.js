@@ -17,6 +17,14 @@ require('./config/passport')(passport)
 
 connectDB()
 
+mongoose.connect(
+        process.env.MONGODB_URI || 'mongodb://localhost:8000/journal',
+        {
+          useNewUrlParser: true,
+          useUnifiedTopology: true,
+        },
+      );
+
 const app = express()
 
 // body parser
@@ -42,6 +50,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // handlebars helpers
 const { formatDate, stripTags, truncate, editIcon, select } = require('./helpers/hbs')
+const { default: mongoose } = require('mongoose')
 
 // handlebars
 app.engine(
