@@ -17,14 +17,6 @@ require('./config/passport')(passport)
 
 connectDB()
 
-mongoose.connect(
-        process.env.MONGODB_URI || 'mongodb://localhost:8000/journal',
-        {
-          useNewUrlParser: true,
-          useUnifiedTopology: true,
-        },
-      );
-
 const app = express()
 
 // body parser
