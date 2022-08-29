@@ -1,0 +1,12 @@
+<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>{{story.title}}</h2>
+                            {{{editIcon story.user user story._id false}}}
+                            <span>{{formatDate date 'MMMM Do YYYY, h:mm:ss a'}}</span>
+                            <p>{{{story.body}}}</p>
+							<ul class="actions stacked">
+								<li> <a href="/stories/user/{{story.user._id}}" class="button">More From {{story.user.firstName}}</a></li>
+							</ul>
+						</div>
+					</section>

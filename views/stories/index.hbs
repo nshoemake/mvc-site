@@ -1,0 +1,21 @@
+<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Journal Entries for Everyone</h2>
+							<p>Browse some of these public journal entries for inspiration...</p>
+							<div class="items style1 medium onscroll-fade-in">
+                                {{#each stories}}
+								    <section>
+								    	<span class="icon style2 major"><img src="{{user.image}}" alt=""></span>
+								    	<h3>{{title}}</h3>
+                                        <a href="/stories/user/{{user._id}}">{{user.displayName}}</a>
+								    	<p>{{stripTags (truncate body 75)}}</p>
+                                        <a href="/stories/{{_id}}" class="button">Read More</a>
+                                        
+                                    </section>
+                                 {{else}}
+                                    <p>No stories to display</p>
+                                {{/each}}
+							</div>
+						</div>
+					</section>

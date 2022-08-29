@@ -1,15 +1,4 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -85,44 +74,12 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-The purpose of this project is to explain and demonstrate the value of the MVC architecture. As one of the more popular design paradigms, it’s important for any budding developer to understand the concept from a macro view.
+The purpose of this project is to explain and demonstrate the value of the MVC architecture. As one of the more popular design paradigms, it’s important for any budding developer to understand the concept from a macro view. The code in this repo is the accompanying material of the lecture/tutorial I've prepared.
 
-Stick with me, and we’ll explore what it is, and how to implement this concept by taking a simple, existing site, and applying the MVC model to it.
+If you'd like to follow along and learn about the MVC structure please clone this repo and visit: <a href="https://nshoemake.me/blog/mvc-site">
 
-What is MVC? MVC, or Model View Controller is a software architecture design pattern. Essentially, an application will include a data model (M), view information (V), and control information ( C). Each of these must be divided into distinct items in accordance with the pattern.This concept separates application functionality, and allows us to build more modular, object-oriented programs.
-
-MVC primarily has to do with an application's user interface and interaction layer. You’ll still need a business logic layer, service layer, and data access layer. But that’s a topic for another time.
-
-So what are these individual pieces?
-
-Model: The model is the portion of the program that communicates with the database and determines how a database is organized. It is responsible for the getting and manipulating of data. It interfaces with our database, and our controller; it essentially works as a gatekeeper for our database. The model is the brain of our application.
-
-View: The view is the user interface. Usually, it’s composed of HTML/CSS, and typically works with a templating engine. It interfaces with our controller.
-
-Controller: The controller takes in user input, it processes CRUD requests, it gets the data from our model, it’s our glue. This piece of the puzzle ties our application together. The controller interfaces with the model and the view. It will handle our user request, get that data from our model, and serve the response and functionality to our view. The controller interacts with the model and view; the model and view never interact with each other. 
-
-Some advantages of MVC:
-1. It's easy to maintain the code base.
-2. It's easy to grow and scale the code base.
-3. Testing is easier, as all components are independent.
-4. Teamwork! We can code different components at the same time.
-5. Our code is reusable. So, so, so DRY.
-
-A couple disadvantages of MVC:
-1. A bit of a steep learning curve, as there are several technologies in play.
-2. Navigation can become difficult as you continue to add layers of complexity.
-
-Now that we know a bit about the core concepts, let’s take a look at a MVC diagram to get a broad-level overview of the design structure.
 
 <img align="center" src="https://www.ma-no.org/cache/galleries/contents-2002/router-mvc-db.svg.png" alt="diagram of mvc structure">
-
-Note: This diagram incorporates a router, which is part of the controller, but by having our routing handled separately we can build extra modular applications. We’ll explore this more the further we go.
-
-Let’s tie in an analogy to help us wrap our heads around the concept. 
-
-Think of MVC as a product team. We have our sales person (browser) who interacts with the client, and takes in an order. Our sales person sends that request off to the router, who assigns the request to a team manager (controller) (note: a robust application can have multiple controllers). The manager determines that some items need to be pulled from inventory to put this order together, so they contact our inventory team (model). Our inventory team checks, and pulls what’s needed from inventory (database) and ships that off to our manager. Our manager passes that inventory off to our production team (view) that turns our inventory into a finished product. Our production team finishes the job, ships it off to the manager, who sends it to the sales person to deliver it to our client. 
-
-So let’s get to the project!
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
@@ -148,15 +105,20 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+1. Let's start by creating a clean directory that we want to put this project in.
+2. Read on!
+
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+You'll need to have npm and git installed. Run these from the terminal:
 * npm
   ```sh
   npm install npm@latest -g
+  ```
+* git
+  ```sh
+  git
   ```
 
 ### Installation
@@ -164,7 +126,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/nshoemake/mvc-site.git
    ```
 3. Install NPM packages
    ```sh

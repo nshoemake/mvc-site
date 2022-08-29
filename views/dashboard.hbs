@@ -1,0 +1,46 @@
+
+<!-- One -->
+<section class="banner style3 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+    <div class="content">
+        <h1>Welcome, {{name}}</h1>
+        <p class="major">What's been on your mind?</p>
+        <ul class="actions stacked">
+            <li><a href="/stories/add" class="button big wide smooth-scroll-middle">Add an Entry</a></li>
+        </ul>
+    </div>
+    {{#if stories}}
+    <div class="content">
+        <p class="major">This is what you've written so far...</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each stories}}
+                <tr>
+                    <td><a href="/stories/{{_id}}">{{title}}</a></td>
+                    <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
+                    <td><span class="dash-status">{{status}}</span></td>
+                    <td>
+                        <ul class="actions stacked">
+                            <li><a href="/stories/edit/{{_id}}" class="button small fit smooth-scroll-middle">Edit</a></li>
+                            <form action="/stories/{{_id}}" method="POST" id="delete-form">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="button small fit smooth-scroll-middle">Delete</button>
+                        </form>
+                        </ul>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+{{else}}
+        <p class="major">No current entries.</p>
+{{/if}}
+</div>
+</section>
