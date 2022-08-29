@@ -193,7 +193,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Nick Shoemake - [@nshoemake_](https://twitter.com/nshoemake_) - nick@nshoemake.me.com
 
 Project Link: [https://github.com/nshoemake/mvc-site](https://github.com/nshoemake/mvc-site)
+
 Demo Link: [https://journalmore.herokuapp.com](https://journalmore.herokuapp.com)
+
 Lecture Link: [https://nshoemake.me/blog/mvc-site](https://nshoemake.me/blog/mvc-site)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
