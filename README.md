@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/nshoemake/mvc-site">
-    <img src="images/journalmore.gif" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Journal More</h3>
@@ -29,9 +29,8 @@
     <a href="https://github.com/nshoemake/mvc-site/issues">Report Bug</a>
     ·
   </p>
+
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -59,8 +58,6 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -79,14 +76,12 @@ If you'd like to learn about the MVC structure please clone this repo and visit:
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Handlebars][Handlebarsjs-shield]][Handlebars-url]
+* [![Handlebars][Express-shield]][Express-url]
+* [![Heroku][Heroku-shield]][Heroku-url]
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,10 +106,13 @@ You'll need to have npm and git installed. Run these from the terminal:
   git
   ```
 
+Make sure you have a MongoDB account too.
+
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Get a Google OAuth API Key at [https://console.cloud.google.com/](https://console.cloud.google.com/)
+2. Get your MongoDB account activated and cluster set up
+3. Clone the repo
    ```sh
    git clone https://github.com/nshoemake/mvc-site.git
    ```
@@ -122,9 +120,12 @@ You'll need to have npm and git installed. Run these from the terminal:
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Enter your PORT, GOOGLE_CLIENT_ID, GOOGLE_SECRET, and MONGO_URI in `config.env`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   PORT = 'ENTER YOUR PORT';
+   MONGO_URI = 'ENTER YOUR MONGO CONNECTION STRING WITH DB NAME';
+   GOOGLE_CLIENT_ID = 'ENTER YOUR GOOGLE CLIENT ID KEY';
+   GOOGLE_SECRET = 'ENTER YOUR GOOGLE SECRET KEY';
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -134,9 +135,9 @@ You'll need to have npm and git installed. Run these from the terminal:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+![journalmore-demo](images/journalmore-demo.gif)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+This application allows users to login with Google authentication. It takes you to a dashboard that lets you add a new journal entry, and shows you what entries you already have. You can read individual entries, edit them, delete them, or set their status to private or public. There's a public page where all users' public stories are populated and you can browse them. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,10 +146,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [X] Implement Google OAuth
+- [X] Setup basic CRUD functionality
+- [X] Pull from DB and populate full public entries on public page
+    - [X] Generate edit icon on individual entries if user is the author
+- [ ] Upgrade text editor
+- [ ] Update schemas to allow for more robust data manipulation and display
+    - [ ] Build 'inspirational writing prompt' generator
 
 See the [open issues](https://github.com/nshoemake/mvc-site/issues) for a full list of proposed features (and known issues).
 
@@ -186,9 +190,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@nshoemake_](https://twitter.com/nshoemake_) - nick@nshoemake.me.com
+Nick Shoemake - [@nshoemake_](https://twitter.com/nshoemake_) - nick@nshoemake.me.com
 
 Project Link: [https://github.com/nshoemake/mvc-site](https://github.com/nshoemake/mvc-site)
+Demo Link: [https://journalmore.herokuapp.com](https://journalmore.herokuapp.com)
+Lecture Link: [https://nshoemake.me/blog/mvc-site](https://nshoemake.me/blog/mvc-site)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,9 +203,9 @@ Project Link: [https://github.com/nshoemake/mvc-site](https://github.com/nshoema
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [MayanWolfe](https://github.com/Mayanwolfe)
+* [Brad Traversy](https://github.com/bradtraversy)
+* [HTML5UP](https://html5up.net/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -236,3 +242,11 @@ Project Link: [https://github.com/nshoemake/mvc-site](https://github.com/nshoema
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Handlebarsjs-shield]: https://img.shields.io/badge/Handlebars.js-f0772b?style=for-the-badge&logo=handlebarsdotjs&logoColor=black
+[Handlebars-url]: https://handlebarsjs.com/
+[Heroku-shield]: https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white
+[Heroku-url]: https://heroku.com
+[Express-shield]: https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white
+[Express-url]: https://expressjs.com
+[MongoDB-shield]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+[MongoDB-url]: https://mongodb.com
